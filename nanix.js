@@ -29,7 +29,7 @@
 
         if (message.content.trim() == "..info") {
             // `.trim()` is required due to the fact that discord straps whitespace to content ig
-            await client.sendMessage(message.channel_id, "**Nanix selfbot v1.0.0"); // responds to the ping with pong in the message's channelid
+            await client.sendMessage(message.channel_id, "**Nanix selfbot v1.0.0** https://github.com/Dashbloxx/Nanix/tree/master"); // responds to the ping with pong in the message's channelid
         }
     });
 
