@@ -8,8 +8,11 @@ client.on("ready", function(d) {
 
 client.on("message_create", async function(d) {
   let message = d.message;
-  if (message.content == "!info") {
+  if (message.content == "!help") {
     await client.sendMessage(message.channel_id, "**NANIX SELFBOT V.0.0.1:2022**\n```\nNanix is a simple selfbot made using Pure Discord.JS, which is a small script meant to be ran inside the google developer console...\n!ping - ping the bot\n!help - get the help menu```");
+  }
+  if (message.content == "!ping") {
+    await client.sendMessage(message.channel_id, "Pinged!");
   }
 });
 
